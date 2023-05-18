@@ -4,24 +4,65 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <title>Javascript Coding Quiz Challenge</title>
 </head>
-<body class="text-center">
+<body>
     <header>
-        <a href="score.html" class="pink-text pink-text:hover header-text">View High Scores</a>
-        <h1 class="header-text">Time: 0</h1>
+        <nav>
+            <h1 id="highScoreBtn" class="pink-text pink-text:hover header-text">View High Scores</h1>
+            <h1 id="returnHomeBtn" class="hide pink-text pink-text:hover header-text">Return Home</h1>
+        </nav>
+
+        <div>
+            <h2 id="scorecard" class="hide">Score:
+                <span id="score"></span> out of 8
+            </h2>
+            <h2 class="timerDiv hide">Time:
+                <span id="timer"></span> second(s) left!
+            </h2>
+        </div>
+            
     </header>
 
-    <section>
-       <h2>Javascript Coding Quiz</h2>
-       <p>Try to answer the following JS code-related questions within the time limit. Keep in mind that incorrect answers will negatively affect your score and time by ten. However, correct answer will improve both, so try your best and good luck! </p>
-       <button class = "button:hover">Start Quiz</button>
-    </section>
+    <div id="project-card" class="d-flex flex-column center-content col-8 mx-auto vh-100">
+        <div id="highscores" class="hide">
+            <div class="">
+                <h1 class="text-center">High Scores!</h1>
+            </div>
+            <div>
+                <ol id="hiScores"></ol>
+            </div>
+        </div>
+        
+        <div id="startSection" class="">
+            <h1 class="text-center">Coding Quiz Challenge</h1>
+            <p class="text-center">Try to answer the following JS code-related questions within the time limit. Keep in mind that incorrect answers will negatively affect your time, so try your best and good luck!</p>
+            <button id="startBtn" class="">Start</button>
+        </div>
+    
+    
+        <div id="questionSection" class="">
+            <h2 id="question"></h2>
+            <div id="choices"></div>
+            <div id="correctorwrong"></div>
+        </div>
+    
+        <div id="endSection" class="hide">
+            <div class="">
+                <h1  class="text-center">Quiz Finished!</h1>
+            <h5  class="text-center">Your final score is <span id="final-score"></span> out of 8</h5>
+            <!-- space to enter initials -->
+            <form class="text-center">
+                <input id="textBox" type="text" placeholder="Enter Your Initials" />
+                <input id="submitInitials" type="submit" value="Submit"/>
+            </form>
+            </div> 
+        </div>
+    </div>
 
+    <script src="./assets/js/questions.js"></script>
     <script src="./assets/js/script.js"></script>
 </body>
 </html>
