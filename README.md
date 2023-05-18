@@ -18,9 +18,12 @@ HTML, CSS, JavaScript, and JQuery
 
 Links below provide a functionality of webpage.
 
-![](assets/images)
-![](assets/images)
-![](assets/images)
+![Image showing quiz homepage](assets/images/JS_quiz_home.png)
+![Image showing quiz quiz page](assets/images/JS_quiz_quizpage.png)
+![Image showing quiz functionality when you answer correctly](assets/images/JS_quiz_quizpage2.png)
+![Image showing quiz functionality when you answer incorrectly](assets/images/JS_quiz_quizpage3.png)
+![Image showing quiz final page where you get results and can save score](assets/images/JS_quiz_enter_scores.png)
+![Image showing quiz highscores page](assets/images/JS_quiz_highscores.png)
 
 ## Credits
 
@@ -29,6 +32,8 @@ Rutger University: https://git.bootcampcontent.com/Rutgers-University/RUT-VIRT-F
 ### References:
 - [Instuctor Videos: JD Tadlock](https://gist.github.com/jdtdesigns/9cfe05400063902e46aa5f6faabff0ca)
 
+Tutoring on 4/8/23 with Carlin Shaw:
+- Helped with getting quiz to work.
 
 ## License
 
